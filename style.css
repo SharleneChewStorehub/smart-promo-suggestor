@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f7fb;
+  color: #222;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background: #23272b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 24px 24px 16px 24px;
+  letter-spacing: 1px;
+}
+.logo span {
+  color: #ffb300;
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+.nav li {
+  padding: 14px 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.nav li.active, .nav li:hover {
+  background: #31363b;
+}
+.main {
+  margin-left: 220px;
+  min-height: 100vh;
+  background: #f6f7fb;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 24px 32px 16px 32px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.header-left h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.header-right .user {
+  font-weight: 500;
+  color: #23272b;
+}
+main#app {
+  padding: 32px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+@media (max-width: 900px) {
+  .sidebar {
+    width: 60px;
+  }
+  .main {
+    margin-left: 60px;
+  }
+  .logo {
+    font-size: 1rem;
+    padding: 16px 8px;
+  }
+  .nav li {
+    padding: 10px 8px;
+    font-size: 0.95rem;
+  }
+  main#app {
+    padding: 16px;
+  }
+  .card {
+    padding: 16px 12px;
+  }
+} 
