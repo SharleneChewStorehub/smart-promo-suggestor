@@ -73,6 +73,573 @@ main#app {
   margin-bottom: 32px;
   max-width: 600px;
 }
+
+/* Dashboard Header */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 32px;
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.dashboard-header h2 {
+  color: #23272b;
+  margin-bottom: 8px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.dashboard-header p {
+  color: #5f6368;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Opportunities Section */
+.opportunities-section {
+  margin-bottom: 48px;
+}
+
+.opportunities-section h3 {
+  color: #23272b;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+/* Generic Opportunity Cards */
+.opportunity-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border: 1px solid #e8eaed;
+  border-left: 4px solid #ffb300;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.opportunity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.opportunity-card .card-header {
+  padding: 24px 32px 16px 32px;
+  border-bottom: 1px solid #f1f3f4;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.opportunity-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.opportunity-info h3 {
+  margin: 0;
+  color: #23272b;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.opportunity-type {
+  background: #e8f0fe;
+  color: #1a73e8;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.opportunity-card .card-content {
+  padding: 16px 32px 32px 32px;
+}
+
+.opportunity-card .card-content p {
+  color: #5f6368;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Opportunity Card Specific */
+.opportunity-card {
+  border-left: 4px solid #ffb300;
+}
+
+.opportunity-card .card-content h4 {
+  color: #23272b;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.opportunity-card .card-content p {
+  color: #5f6368;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.impact-section {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.impact-label {
+  font-weight: 600;
+  color: #23272b;
+}
+
+.impact-value {
+  color: #137333;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.action-btn {
+  background: #ffb300;
+  color: #23272b;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+
+.action-btn:hover {
+  background: #ff8f00;
+}
+
+/* VIP Section */
+.vip-section {
+  margin-top: 48px;
+}
+
+.vip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.vip-header h3 {
+  color: #23272b;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.generate-vip-btn {
+  background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(156, 39, 176, 0.3);
+}
+
+.generate-vip-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(156, 39, 176, 0.4);
+}
+
+.generate-vip-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* VIP Results */
+.vip-results {
+  margin-top: 24px;
+}
+
+.vip-analysis-header {
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: #f3e5f5;
+  border-radius: 12px;
+  border-left: 4px solid #9c27b0;
+}
+
+.vip-analysis-header h4 {
+  color: #23272b;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.vip-analysis-header p {
+  color: #5f6368;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.vip-customers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* VIP Customer Cards */
+.vip-customer-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border: 1px solid #e8eaed;
+  border-left: 4px solid #9c27b0;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.vip-customer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.vip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.customer-name {
+  margin: 0;
+  color: #23272b;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.vip-badge {
+  background: #9c27b0;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.vip-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #5f6368;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  display: block;
+  font-weight: 600;
+  color: #23272b;
+  font-size: 1rem;
+}
+
+.stat-value.warning {
+  color: #ea4335;
+}
+
+.favorite-items {
+  padding-top: 16px;
+  border-top: 1px solid #f1f3f4;
+}
+
+.favorites-label {
+  font-weight: 600;
+  color: #23272b;
+  font-size: 0.9rem;
+}
+
+.favorites-text {
+  color: #5f6368;
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+
+.offer-section {
+  background: #f3e5f5;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.offer-label {
+  display: block;
+  font-weight: 600;
+  color: #23272b;
+  margin-bottom: 8px;
+}
+
+.offer-text {
+  color: #7b1fa2;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.sms-section {
+  margin-bottom: 16px;
+}
+
+.sms-section label {
+  display: block;
+  font-weight: 600;
+  color: #23272b;
+  margin-bottom: 8px;
+}
+
+.sms-template {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  resize: vertical;
+  margin-bottom: 12px;
+}
+
+.sms-template:focus {
+  outline: none;
+  border-color: #ffb300;
+  box-shadow: 0 0 0 2px rgba(255, 179, 0, 0.2);
+}
+
+.sms-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.send-btn, .edit-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.send-btn {
+  background: #ffb300;
+  color: #23272b;
+}
+
+.send-btn:hover {
+  background: #ff8f00;
+}
+
+.edit-btn {
+  background: #f1f3f4;
+  color: #5f6368;
+}
+
+.edit-btn:hover {
+  background: #e8eaed;
+}
+
+.business-impact {
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid #f1f3f4;
+}
+
+.impact-small {
+  color: #137333;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #23272b;
+  font-size: 1.5rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #5f6368;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  color: #23272b;
+}
+
+.modal-body {
+  padding: 32px;
+}
+
+.customer-summary {
+  margin-bottom: 32px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #5f6368;
+  margin-bottom: 4px;
+}
+
+.summary-value {
+  display: block;
+  font-weight: 600;
+  color: #23272b;
+  font-size: 1.1rem;
+}
+
+.summary-value.highlight {
+  color: #137333;
+  font-size: 1.2rem;
+}
+
+.transactions-list h4 {
+  color: #23272b;
+  margin-bottom: 16px;
+}
+
+.transaction-item {
+  background: #fff;
+  border: 1px solid #e8eaed;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.transaction-date {
+  font-weight: 600;
+  color: #23272b;
+}
+
+.transaction-amount {
+  font-weight: 600;
+  color: #137333;
+  font-size: 1.1rem;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #5f6368;
+  margin-right: 8px;
+}
+
+.detail-value {
+  color: #23272b;
+}
+
+.detail-value.voucher {
+  background: #e8f0fe;
+  color: #1a73e8;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
 @media (max-width: 900px) {
   .sidebar {
     width: 60px;
@@ -91,7 +658,37 @@ main#app {
   main#app {
     padding: 16px;
   }
-  .card {
-    padding: 16px 12px;
+  .dashboard-header {
+    padding: 24px 16px;
+  }
+  .dashboard-header h2 {
+    font-size: 1.8rem;
+  }
+  .opportunities-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .opportunity-card .card-header,
+  .opportunity-card .card-content {
+    padding: 16px 20px;
+  }
+  .vip-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .vip-customers-grid {
+    grid-template-columns: 1fr;
+  }
+  .modal-content {
+    width: 95%;
+    margin: 20px;
+  }
+  .modal-header,
+  .modal-body {
+    padding: 20px;
+  }
+  .summary-stats {
+    grid-template-columns: 1fr;
   }
 } 
